@@ -36,6 +36,7 @@ class Search extends React.Component {
 
     exampleVideoData = [];
     data.items.forEach(function(datum) {
+      console.log(datum);
       video = {};
       video.kind = datum.kind;
       video.etag = datum.etag;

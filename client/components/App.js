@@ -15,7 +15,14 @@ class App extends React.Component {
     super(props);
     this.state = {
       allVideos: props.data,
-      currentVideo: props.data[0],
+      currentVideo: props.data[0]
+    };
+  }
+
+  componentDidMount() {
+    this.state = {
+      allVideos: exampleVideoData,
+      currentVideo: exampleVideoData[0]
     };
   }
 
